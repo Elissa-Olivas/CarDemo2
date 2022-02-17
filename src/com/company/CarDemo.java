@@ -7,13 +7,14 @@ public class CarDemo {
         // uses accessor methods to set each of its instance variables and then gets their values,
         // and finally prints out information about your vehicle
 
-        Car myCar = new Car();
+        Car myCar = new Car("Ford", "Bronco");
 
-        myCar.setColorOfCar("Graphite");
-        myCar.setMakeOfCar("Ford");
-        myCar.setModelOfCar("Bronco");
+        myCar.describeCar();
+        //myCar.setColorOfCar("Graphite");
+        //myCar.setMakeOfCar("Ford");
+        //myCar.setModelOfCar("Bronco");
 
-        System.out.println("My vehicle is a " + myCar.getColorOfCar() + " " + myCar.getMakeOfCar() + " " +
-                myCar.getModelOfCar());
+        //System.out.println("My vehicle is a " + myCar.getColorOfCar() + " " + myCar.getMakeOfCar() + " " +
+               // myCar.getModelOfCar());
     }
 }

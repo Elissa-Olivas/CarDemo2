@@ -5,8 +5,14 @@ public class Car {
     private String makeOfCar;
     private String modelOfCar;
 
+    public Car(String makeOfCar, String modelOfCar) {
+        this.colorOfCar = "Blue";
+        this.makeOfCar = makeOfCar;
+        this.modelOfCar = modelOfCar;
+    }
+
     //setting method for color
-    public void setColorOfCar(String color){
+    public void setColorOfCar(String color) {
         colorOfCar = color;
     }
 
@@ -20,6 +26,7 @@ public class Car {
     public void setMakeOfCar(String make) {
         makeOfCar = make;
     }
+
     //getter method for make
     public String getMakeOfCar() {
         return makeOfCar;
@@ -30,8 +37,13 @@ public class Car {
     public void setModelOfCar(String model) {
         modelOfCar = model;
     }
+
     //getter method for model
     public String getModelOfCar() {
         return modelOfCar;
+    }
+
+    public void describeCar() {
+        System.out.println("Your car is a " + getColorOfCar() + ", " + getMakeOfCar() + " " + getModelOfCar());
     }
 }
